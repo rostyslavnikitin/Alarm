@@ -15,3 +15,16 @@ Of course, the user still able to physically turn off the external sound system,
 
 For the build this project you need BOOST, so install BOOST 
 and make sure do you have set a `BOOST_ROOT` variable.
+
+After the project will build, need to set up a task in Task Scheduler. Example task located in 
+
+`script/alarm_task_example.xml`
+
+You can import that in Task scheduler, but do not forget to set up security options like on the screenshot
+
+![task_setup_1](https://raw.githubusercontent.com/rostyslavnikitin/Alarm/master/files/task_setup_1.png)
+
+you can specify run a program with arguments like in this task example, just add alarm.exe to the path and provide an absolute path to WAV sound what do you want to play with this alarm program.
+
+Another way it specifies command and arguments in a separated .bat file. The example also located in 
+`scripts/alarm.bat`
